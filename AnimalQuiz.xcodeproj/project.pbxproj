@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		12BAF433261C6906001B036C /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF432261C6906001B036C /* SelectLevelViewController.swift */; };
 		12BAF436261C6FDA001B036C /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF435261C6FDA001B036C /* quiz2.csv */; };
 		12BAF439261C702C001B036C /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF438261C702C001B036C /* quiz3.csv */; };
+		12BAF461261EE96F001B036C /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF460261EE96F001B036C /* launchImageView.png */; };
+		D7B9715C37DEAAF73CDD90F4 /* Pods_AnimalQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ED875120CB70B38A367A61 /* Pods_AnimalQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		12BAF432261C6906001B036C /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		12BAF435261C6FDA001B036C /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 		12BAF438261C702C001B036C /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
+		12BAF460261EE96F001B036C /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
+		78ED875120CB70B38A367A61 /* Pods_AnimalQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1A3ECE930A6E58BF1ED62D /* Pods-AnimalQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalQuiz.debug.xcconfig"; path = "Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		A8816D251E31CD812D26EE98 /* Pods-AnimalQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalQuiz.release.xcconfig"; path = "Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B9715C37DEAAF73CDD90F4 /* Pods_AnimalQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,8 @@
 			children = (
 				12BAF40D261B00AD001B036C /* AnimalQuiz */,
 				12BAF40C261B00AD001B036C /* Products */,
+				BD52C1EBF17B563F59BAC1F2 /* Pods */,
+				D9058EF246D7228F06F4C98A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +95,7 @@
 				12BAF417261B00AF001B036C /* Assets.xcassets */,
 				12BAF419261B00AF001B036C /* LaunchScreen.storyboard */,
 				12BAF41C261B00AF001B036C /* Info.plist */,
+				12BAF45F261EE96F001B036C /* launchImage */,
 			);
 			path = AnimalQuiz;
 			sourceTree = "<group>";
@@ -99,6 +109,31 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		12BAF45F261EE96F001B036C /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF460261EE96F001B036C /* launchImageView.png */,
+			);
+			path = launchImage;
+			sourceTree = "<group>";
+		};
+		BD52C1EBF17B563F59BAC1F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C1A3ECE930A6E58BF1ED62D /* Pods-AnimalQuiz.debug.xcconfig */,
+				A8816D251E31CD812D26EE98 /* Pods-AnimalQuiz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9058EF246D7228F06F4C98A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78ED875120CB70B38A367A61 /* Pods_AnimalQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12BAF41F261B00AF001B036C /* Build configuration list for PBXNativeTarget "AnimalQuiz" */;
 			buildPhases = (
+				89BAEA9527AB1D78F317CC9B /* [CP] Check Pods Manifest.lock */,
 				12BAF407261B00AD001B036C /* Sources */,
 				12BAF408261B00AD001B036C /* Frameworks */,
 				12BAF409261B00AD001B036C /* Resources */,
+				A5E026903B94826118AF0DD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BAF461261EE96F001B036C /* launchImageView.png in Resources */,
 				12BAF436261C6FDA001B036C /* quiz2.csv in Resources */,
 				12BAF42F261C418A001B036C /* correct.png in Resources */,
 				12BAF430261C418A001B036C /* incorrect.png in Resources */,
@@ -168,6 +206,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89BAEA9527AB1D78F317CC9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E026903B94826118AF0DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12BAF407261B00AD001B036C /* Sources */ = {
@@ -323,6 +403,7 @@
 		};
 		12BAF420261B00AF001B036C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1A3ECE930A6E58BF1ED62D /* Pods-AnimalQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,12 +417,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginpen.AnimalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		12BAF421261B00AF001B036C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8816D251E31CD812D26EE98 /* Pods-AnimalQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginpen.AnimalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

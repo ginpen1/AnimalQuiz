@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class QuizViewController: UIViewController {
     @IBOutlet weak var quizNumberLabel: UILabel!
@@ -16,6 +17,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton4: UIButton!
     @IBOutlet weak var judgeImageView: UIImageView!
     
+    var bannerView: GADBannerView!
     var csvArray: [String] = []
     var quizArrey: [String] = []
     var quizCount = 0
@@ -24,20 +26,36 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        addBannerViewToView(bannerView)
+        
         print("選択したのはレベル\(selectLevel)")
         
         csvArray = loadCSV(fileName: "quiz\(selectLevel)")
         csvArray.shuffle()
         
-        quizArrey = csvArray[quizCount].components(separatedBy: ",")
+        print(csvArray)
         
-        quizNumberLabel.text = "第\(quizCount + 1)問"
+        quizArrey = csvArray[quizCount].components(separatedBy: ",")
+        quizNumberLabel.text = "だい\(quizCount + 1)もん"
         quizTextView.text = quizArrey[0]
         answerButton1.setTitle(quizArrey[2], for: .normal)
         answerButton2.setTitle(quizArrey[3], for: .normal)
         answerButton3.setTitle(quizArrey[4], for: .normal)
         answerButton4.setTitle(quizArrey[5], for: .normal)
+        
+        answerButton1.layer.borderWidth = 2
+        answerButton1.layer.borderColor = UIColor.black.cgColor
+        answerButton2.layer.borderWidth = 2
+        answerButton2.layer.borderColor = UIColor.black.cgColor
+        answerButton3.layer.borderWidth = 2
+        answerButton3.layer.borderColor = UIColor.black.cgColor
+        answerButton4.layer.borderWidth = 2
+        answerButton4.layer.borderColor = UIColor.black.cgColor
         
         // Do any additional setup after loading the view.
     }
@@ -49,8 +67,8 @@ class QuizViewController: UIViewController {
     
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArrey[1]) {
-            print("正解")
             correctCount += 1
+            print("正解")
             judgeImageView.image = UIImage(named: "correct")
         } else {
             print("不正解")
@@ -76,7 +94,7 @@ class QuizViewController: UIViewController {
         quizCount += 1
         if quizCount < csvArray.count {
             quizArrey = csvArray[quizCount].components(separatedBy: ",")
-            quizNumberLabel.text = "第\(quizCount + 1)問"
+            quizNumberLabel.text = "だい\(quizCount + 1)もん"
             quizTextView.text = quizArrey[0]
             answerButton1.setTitle(quizArrey[2], for: .normal)
             answerButton2.setTitle(quizArrey[3], for: .normal)
@@ -100,6 +118,28 @@ class QuizViewController: UIViewController {
         return csvArray
     }
 
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+        [NSLayoutConstraint(item: bannerView,
+                    attribute: .bottom,
+                    relatedBy: .equal,
+                    toItem: view.safeAreaLayoutGuide,
+                    attribute: .bottom,
+                    multiplier: 1,
+                    constant: 0),
+         NSLayoutConstraint(item: bannerView,
+                    attribute: .centerX,
+                    relatedBy: .equal,
+                    toItem: view,
+                    attribute: .centerX,
+                    multiplier: 1,
+                    constant: 0)
+        ])
+    }
+    
+    
     /*
     // MARK: - Navigation
 
