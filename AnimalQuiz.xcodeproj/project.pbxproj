@@ -16,12 +16,27 @@
 		12BAF424261B01E2001B036C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF423261B01E2001B036C /* QuizViewController.swift */; };
 		12BAF427261B029F001B036C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF426261B029F001B036C /* ScoreViewController.swift */; };
 		12BAF42A261B09E1001B036C /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF429261B09E1001B036C /* quiz1.csv */; };
-		12BAF42F261C418A001B036C /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF42D261C418A001B036C /* correct.png */; };
-		12BAF430261C418A001B036C /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF42E261C418A001B036C /* incorrect.png */; };
 		12BAF433261C6906001B036C /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF432261C6906001B036C /* SelectLevelViewController.swift */; };
 		12BAF436261C6FDA001B036C /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF435261C6FDA001B036C /* quiz2.csv */; };
 		12BAF439261C702C001B036C /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF438261C702C001B036C /* quiz3.csv */; };
 		12BAF461261EE96F001B036C /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF460261EE96F001B036C /* launchImageView.png */; };
+		12BAF464262002AE001B036C /* mainbgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF463262002AD001B036C /* mainbgm.mp3 */; };
+		12BAF46F26203349001B036C /* startButtonSE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF46E26203349001B036C /* startButtonSE.mp3 */; };
+		12BAF47426204129001B036C /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF47326204129001B036C /* correct.png */; };
+		12BAF47726204132001B036C /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF47626204132001B036C /* incorrect.png */; };
+		12BAF47B26205992001B036C /* correctSE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF47A26205992001B036C /* correctSE.mp3 */; };
+		12BAF47E262059A1001B036C /* incorrectSE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF47D262059A1001B036C /* incorrectSE.mp3 */; };
+		12BAF4812620615C001B036C /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4802620615C001B036C /* panda.png */; };
+		12BAF48426206234001B036C /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF48326206234001B036C /* chicken.png */; };
+		12BAF4872620623F001B036C /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4862620623F001B036C /* frog.png */; };
+		12BAF48A26206249001B036C /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF48926206249001B036C /* lion.png */; };
+		12BAF48D26206250001B036C /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF48C26206250001B036C /* rabbit.png */; };
+		12BAF4A026217D63001B036C /* HonobonoPop-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF49F26217D63001B036C /* HonobonoPop-Regular.otf */; };
+		12BAF4A326218846001B036C /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4A226218845001B036C /* crayon_1-1.ttf */; };
+		12BAF4A626218D79001B036C /* mitubachiFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4A526218D79001B036C /* mitubachiFont.ttf */; };
+		12BAF4A92621905D001B036C /* pugnomincho-mini.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4A82621905C001B036C /* pugnomincho-mini.otf */; };
+		12BAF4AC26219397001B036C /* pupupu-free.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4AB26219397001B036C /* pupupu-free.otf */; };
+		12BAF4AF26219715001B036C /* marubatu.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF4AE26219715001B036C /* marubatu.png */; };
 		D7B9715C37DEAAF73CDD90F4 /* Pods_AnimalQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ED875120CB70B38A367A61 /* Pods_AnimalQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +52,27 @@
 		12BAF423261B01E2001B036C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		12BAF426261B029F001B036C /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		12BAF429261B09E1001B036C /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
-		12BAF42D261C418A001B036C /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
-		12BAF42E261C418A001B036C /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		12BAF432261C6906001B036C /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		12BAF435261C6FDA001B036C /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 		12BAF438261C702C001B036C /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
 		12BAF460261EE96F001B036C /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
+		12BAF463262002AD001B036C /* mainbgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainbgm.mp3; sourceTree = "<group>"; };
+		12BAF46E26203349001B036C /* startButtonSE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startButtonSE.mp3; sourceTree = "<group>"; };
+		12BAF47326204129001B036C /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		12BAF47626204132001B036C /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
+		12BAF47A26205992001B036C /* correctSE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctSE.mp3; sourceTree = "<group>"; };
+		12BAF47D262059A1001B036C /* incorrectSE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrectSE.mp3; sourceTree = "<group>"; };
+		12BAF4802620615C001B036C /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda.png; sourceTree = "<group>"; };
+		12BAF48326206234001B036C /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		12BAF4862620623F001B036C /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		12BAF48926206249001B036C /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		12BAF48C26206250001B036C /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
+		12BAF49F26217D63001B036C /* HonobonoPop-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HonobonoPop-Regular.otf"; sourceTree = "<group>"; };
+		12BAF4A226218845001B036C /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
+		12BAF4A526218D79001B036C /* mitubachiFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mitubachiFont.ttf; sourceTree = "<group>"; };
+		12BAF4A82621905C001B036C /* pugnomincho-mini.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pugnomincho-mini.otf"; sourceTree = "<group>"; };
+		12BAF4AB26219397001B036C /* pupupu-free.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pupupu-free.otf"; sourceTree = "<group>"; };
+		12BAF4AE26219715001B036C /* marubatu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marubatu.png; sourceTree = "<group>"; };
 		78ED875120CB70B38A367A61 /* Pods_AnimalQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1A3ECE930A6E58BF1ED62D /* Pods-AnimalQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalQuiz.debug.xcconfig"; path = "Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		A8816D251E31CD812D26EE98 /* Pods-AnimalQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalQuiz.release.xcconfig"; path = "Target Support Files/Pods-AnimalQuiz/Pods-AnimalQuiz.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +90,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128F01D02622734D00FD0DD2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF49F26217D63001B036C /* HonobonoPop-Regular.otf */,
+				12BAF4A226218845001B036C /* crayon_1-1.ttf */,
+				12BAF4A526218D79001B036C /* mitubachiFont.ttf */,
+				12BAF4A82621905C001B036C /* pugnomincho-mini.otf */,
+				12BAF4AB26219397001B036C /* pupupu-free.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		128F01D12622737D00FD0DD2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF463262002AD001B036C /* mainbgm.mp3 */,
+				12BAF46E26203349001B036C /* startButtonSE.mp3 */,
+				12BAF47A26205992001B036C /* correctSE.mp3 */,
+				12BAF47D262059A1001B036C /* incorrectSE.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		128F01D2262273CD00FD0DD2 /* quizzes */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF429261B09E1001B036C /* quiz1.csv */,
+				12BAF435261C6FDA001B036C /* quiz2.csv */,
+				12BAF438261C702C001B036C /* quiz3.csv */,
+			);
+			path = quizzes;
+			sourceTree = "<group>";
+		};
 		12BAF402261B00AD001B036C = {
 			isa = PBXGroup;
 			children = (
@@ -86,27 +149,33 @@
 				12BAF412261B00AD001B036C /* ViewController.swift */,
 				12BAF414261B00AD001B036C /* Main.storyboard */,
 				12BAF432261C6906001B036C /* SelectLevelViewController.swift */,
-				12BAF429261B09E1001B036C /* quiz1.csv */,
 				12BAF426261B029F001B036C /* ScoreViewController.swift */,
 				12BAF423261B01E2001B036C /* QuizViewController.swift */,
-				12BAF435261C6FDA001B036C /* quiz2.csv */,
-				12BAF438261C702C001B036C /* quiz3.csv */,
-				12BAF42C261C418A001B036C /* image */,
 				12BAF417261B00AF001B036C /* Assets.xcassets */,
 				12BAF419261B00AF001B036C /* LaunchScreen.storyboard */,
 				12BAF41C261B00AF001B036C /* Info.plist */,
+				128F01D2262273CD00FD0DD2 /* quizzes */,
+				128F01D12622737D00FD0DD2 /* sounds */,
+				128F01D02622734D00FD0DD2 /* fonts */,
+				12BAF42C261C418A001B036C /* images */,
 				12BAF45F261EE96F001B036C /* launchImage */,
 			);
 			path = AnimalQuiz;
 			sourceTree = "<group>";
 		};
-		12BAF42C261C418A001B036C /* image */ = {
+		12BAF42C261C418A001B036C /* images */ = {
 			isa = PBXGroup;
 			children = (
-				12BAF42D261C418A001B036C /* correct.png */,
-				12BAF42E261C418A001B036C /* incorrect.png */,
+				12BAF4AE26219715001B036C /* marubatu.png */,
+				12BAF48C26206250001B036C /* rabbit.png */,
+				12BAF48926206249001B036C /* lion.png */,
+				12BAF4862620623F001B036C /* frog.png */,
+				12BAF48326206234001B036C /* chicken.png */,
+				12BAF4802620615C001B036C /* panda.png */,
+				12BAF47326204129001B036C /* correct.png */,
+				12BAF47626204132001B036C /* incorrect.png */,
 			);
-			path = image;
+			path = images;
 			sourceTree = "<group>";
 		};
 		12BAF45F261EE96F001B036C /* launchImage */ = {
@@ -193,14 +262,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BAF4A326218846001B036C /* crayon_1-1.ttf in Resources */,
+				12BAF4812620615C001B036C /* panda.png in Resources */,
+				12BAF4A626218D79001B036C /* mitubachiFont.ttf in Resources */,
+				12BAF47426204129001B036C /* correct.png in Resources */,
+				12BAF464262002AE001B036C /* mainbgm.mp3 in Resources */,
 				12BAF461261EE96F001B036C /* launchImageView.png in Resources */,
+				12BAF48426206234001B036C /* chicken.png in Resources */,
+				12BAF48D26206250001B036C /* rabbit.png in Resources */,
+				12BAF47726204132001B036C /* incorrect.png in Resources */,
+				12BAF4A026217D63001B036C /* HonobonoPop-Regular.otf in Resources */,
 				12BAF436261C6FDA001B036C /* quiz2.csv in Resources */,
-				12BAF42F261C418A001B036C /* correct.png in Resources */,
-				12BAF430261C418A001B036C /* incorrect.png in Resources */,
+				12BAF48A26206249001B036C /* lion.png in Resources */,
 				12BAF41B261B00AF001B036C /* LaunchScreen.storyboard in Resources */,
 				12BAF418261B00AF001B036C /* Assets.xcassets in Resources */,
+				12BAF4872620623F001B036C /* frog.png in Resources */,
 				12BAF416261B00AD001B036C /* Main.storyboard in Resources */,
+				12BAF4AF26219715001B036C /* marubatu.png in Resources */,
+				12BAF46F26203349001B036C /* startButtonSE.mp3 in Resources */,
+				12BAF47B26205992001B036C /* correctSE.mp3 in Resources */,
+				12BAF4AC26219397001B036C /* pupupu-free.otf in Resources */,
+				12BAF4A92621905D001B036C /* pugnomincho-mini.otf in Resources */,
 				12BAF42A261B09E1001B036C /* quiz1.csv in Resources */,
+				12BAF47E262059A1001B036C /* incorrectSE.mp3 in Resources */,
 				12BAF439261C702C001B036C /* quiz3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

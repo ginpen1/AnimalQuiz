@@ -68,5 +68,13 @@
 	<string>Light</string>
 	<key>CFBundleDisplayName</key>
 	<string>どうぶつクイズ</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pupupu-free.otf</string>
+		<string>pugnomincho-mini.otf</string>
+		<string>mitubachiFont.ttf</string>
+		<string>crayon_1-1.ttf</string>
+		<string>HonobonoPop-Regular.otf</string>
+	</array>
 </dict>
 </plist>

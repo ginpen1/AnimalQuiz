@@ -16,38 +16,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAp-l8-hV1">
-                                <rect key="frame" x="20" y="293.5" width="335" height="80"/>
-                                <color key="backgroundColor" red="0.99987310169999999" green="0.18614267937103343" blue="0.089806466048514041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="H34-NT-YyE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="スタート">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="UVr-q2-4ZS" kind="presentation" id="5XG-ww-121"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="どうぶつクイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-gT-cbx">
-                                <rect key="frame" x="12" y="100" width="354" height="60"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="どうぶつクイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-gT-cbx">
+                                <rect key="frame" x="12" y="100" width="351.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-Wh-PA8">
+                                <rect key="frame" x="20" y="195" width="335" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CyV-ig-2Jw">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAp-l8-hV1">
+                                        <rect key="frame" x="0.0" y="80" width="335" height="80"/>
+                                        <color key="backgroundColor" red="0.99987310169999999" green="0.18614267937103343" blue="0.089806466048514041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="H34-NT-YyE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <state key="normal" title="スタート">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSoundWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upC-iu-JbA"/>
+                                            <segue destination="UVr-q2-4ZS" kind="presentation" id="5XG-ww-121"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="YBp-Ha-JX6"/>
+                                    <constraint firstAttribute="width" constant="335" id="d7z-jY-Dsu"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DwH-4u-5xc">
+                                <rect key="frame" x="186" y="31" width="108" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-xB-f6Y">
+                                <rect key="frame" x="44" y="45" width="126" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-Nz-mqO">
+                                <rect key="frame" x="56" y="399" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.83137254901960778" green="0.97647058823529409" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qAp-l8-hV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M0t-dJ-eem"/>
+                            <constraint firstItem="m4p-Wh-PA8" firstAttribute="top" secondItem="bpE-gT-cbx" secondAttribute="bottom" constant="35" id="0LR-fo-a9V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m4p-Wh-PA8" secondAttribute="trailing" constant="20" id="CgF-jJ-Zpd"/>
                             <constraint firstItem="bpE-gT-cbx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NzH-iA-91Y"/>
-                            <constraint firstItem="qAp-l8-hV1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ib5-8I-ECn"/>
+                            <constraint firstItem="m4p-Wh-PA8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kAb-pM-9Ry"/>
                             <constraint firstItem="bpE-gT-cbx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="mVG-jI-6jN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qAp-l8-hV1" secondAttribute="trailing" constant="20" id="n8n-BJ-6V3"/>
+                            <constraint firstItem="m4p-Wh-PA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWs-g5-NTZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appTitle" destination="bpE-gT-cbx" id="FOD-v5-x6E"/>
+                        <outlet property="chickenImageView" destination="CyV-ig-2Jw" id="3xl-1l-RHF"/>
+                        <outlet property="marubatuImageView" destination="t9O-xB-f6Y" id="vL2-iW-J6g"/>
+                        <outlet property="pandaImageView" destination="0EN-Nz-mqO" id="ubm-3J-bhN"/>
+                        <outlet property="rabbitImageView" destination="DwH-4u-5xc" id="JGg-Dc-Bzf"/>
                         <outlet property="startButton" destination="qAp-l8-hV1" id="Kt0-G4-nWV"/>
                     </connections>
                 </viewController>
@@ -253,33 +284,36 @@
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="70"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="レベル１">
+                                        <state key="normal" title="かんたん">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="levelButtonActionWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="x2a-KA-9Xi"/>
+                                            <action selector="playSoundWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="odN-JO-LbH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-iK-bKs">
                                         <rect key="frame" x="0.0" y="100" width="295" height="70"/>
                                         <color key="backgroundColor" red="0.99987310169999999" green="0.83192954843917499" blue="0.12629919493341599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="レベル２">
+                                        <state key="normal" title="ふつう">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="levelButtonActionWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="cIG-c0-QPb"/>
+                                            <action selector="playSoundWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="6mD-QP-5bj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r7-Fw-uiB">
                                         <rect key="frame" x="0.0" y="200" width="295" height="70"/>
                                         <color key="backgroundColor" red="0.99987310169999999" green="0.1204710479" blue="0.088958986259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="レベル３">
+                                        <state key="normal" title="むずかしい">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="levelButtonActionWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="EvZ-QQ-U5l"/>
+                                            <action selector="playSoundWithSender:" destination="UVr-q2-4ZS" eventType="touchUpInside" id="ZBs-tP-dF2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -320,6 +354,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SelectLevelViewController: UIViewController {
     @IBOutlet weak var level1Button: UIButton!
     @IBOutlet weak var level2Button: UIButton!
     @IBOutlet weak var level3Button: UIButton!
     
+    var player1:AVAudioPlayer?
     var selectTag = 0
 
     override func viewDidLoad() {
@@ -39,6 +41,16 @@ class SelectLevelViewController: UIViewController {
         print(sender.tag)
         selectTag = sender.tag
         performSegue(withIdentifier: "toQuizVC", sender: nil)
+    }
+    
+    @IBAction func playSound(sender: AnyObject) {
+        let soundURL = Bundle.main.url(forResource: "startButtonSE", withExtension: "mp3")
+         do {
+             player1 = try AVAudioPlayer(contentsOf: soundURL!)
+             player1?.play()
+         } catch {
+             print("error...")
+         }
     }
 
     /*

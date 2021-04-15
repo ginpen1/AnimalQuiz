@@ -29,7 +29,7 @@ class ScoreViewController: UIViewController {
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
-        let activityItems = ["\(correct)問正解しました。","#クイズアプリ"]
+        let activityItems = ["\(correct)もんせいかいしたよ！","#どうぶつクイズ"]
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
         self.present(activityVC, animated: true)
     }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 import GoogleMobileAds
 
 class QuizViewController: UIViewController {
@@ -17,6 +18,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton4: UIButton!
     @IBOutlet weak var judgeImageView: UIImageView!
     
+    var player1:AVAudioPlayer?
     var bannerView: GADBannerView!
     var csvArray: [String] = []
     var quizArrey: [String] = []
@@ -70,9 +72,24 @@ class QuizViewController: UIViewController {
             correctCount += 1
             print("正解")
             judgeImageView.image = UIImage(named: "correct")
+            let soundURL = Bundle.main.url(forResource: "correctSE", withExtension: "mp3")
+             do {
+                 player1 = try AVAudioPlayer(contentsOf: soundURL!)
+                 player1!.volume = 2
+                 player1?.play()
+             } catch {
+                 print("error...")
+             }
         } else {
             print("不正解")
             judgeImageView.image = UIImage(named: "incorrect")
+            let soundURL = Bundle.main.url(forResource: "incorrectSE", withExtension: "mp3")
+             do {
+                 player1 = try AVAudioPlayer(contentsOf: soundURL!)
+                 player1?.play()
+             } catch {
+                 print("error...")
+             }
         }
         print("スコア:\(correctCount)")
         judgeImageView.isHidden = false
